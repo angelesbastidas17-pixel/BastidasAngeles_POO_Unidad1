@@ -37,6 +37,14 @@ public class Pelicula extends ContenidoAudiovisual {
         System.out.println("Duración en minutos: " + getDuracionEnMinutos());
         System.out.println("Género: " + getGenero());
         System.out.println("Estudio: " + estudio);
+        if (actores.isEmpty()){
+            System.out.println("Actores: Aun no se ha agregado ninguno");
+        }else{
+            System.out.println("Actores:");
+            for(int i = 0; i<actores.size();i++){
+                System.out.println(actores.get(i).getNombre());
+            }
+        }
         System.out.println();
     }
 }
