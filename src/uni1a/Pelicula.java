@@ -29,6 +29,10 @@ public class Pelicula extends ContenidoAudiovisual {
         actores.add(actor);
     }
     
+    public ArrayList<Actor> getActores(){
+        return actores;
+    }
+    
     @Override
     public void mostrarDetalles() {
         System.out.println("Detalles de la película:");
